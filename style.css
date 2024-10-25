@@ -1,0 +1,88 @@
+L/* Reset CSS dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e0e0e0; /* Warna latar belakang umum */
+    color: #333; /* Warna teks umum */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    height: 100vh; /* Tinggi kontainer sama dengan tinggi viewport */
+    overflow: hidden; /* Sembunyikan konten yang melebihi tinggi kontainer */
+}
+
+header {
+    background-color: #3f51b5; /* Warna latar belakang header */
+    color: white; /* Warna teks header */
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    margin-top: 20px;
+    height: 200%; /* Tinggi konten utama dua kali tinggi kontainer */
+}
+
+section {
+    padding: 20px;
+    border-bottom: 1px solid #ccc; /* Garis pemisah antar bagian */
+}
+
+.about {
+    background-color: #81d4fa; /* Warna latar belakang untuk bagian tentang */
+    color: #0d47a1; /* Warna teks untuk bagian tentang */
+}
+
+.skills {
+    background-color: #ffecb3; /* Warna latar belakang untuk bagian keterampilan */
+    color: #ff8f00; /* Warna teks untuk bagian keterampilan */
+}
+
+h1 {
+    font-size: 2.5em; /* Ukuran font judul */
+}
+
+h2 {
+    font-size: 2em; /* Ukuran font subjudul */
+    border-bottom: 2px solid #3f51b5; /* Garis bawah untuk judul */
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* Media Queries untuk perangkat mobile */
+@media (max-width: 768px) {
+    .container {
+        height: 100vh; /* Set tinggi kontainer menjadi tinggi viewport */
+    }
+
+    main {
+        height: 200%; /* Atur tinggi konten utama dua kali */
+        overflow-y: auto; /* Aktifkan scroll untuk konten yang berlebih */
+    }
+
+    section {
+        padding: 15px; /* Kurangi padding di mobile */
+    }
+
+    h1 {
+        font-size: 1.8em; /* Ukuran font judul di mobile */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Ukuran font subjudul di mobile */
+    }
+
+    p {
+        font-size: 0.9em; /* Ukuran font paragraf di mobile */
+    }
+
+    ul {
+        padding-left: 20px; /* Padding untuk daftar keterampilan */
+        font-size: 0.9em; /* Ukuran font untuk daftar di mobile */
+    }
+}
